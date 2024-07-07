@@ -1,0 +1,77 @@
+### GET USERS
+GET http://localhost:3000/api/users
+
+### POST USUARIO
+POST http://localhost:3000/api/users
+content-type: application/json
+
+{
+    "username": "beatriz",
+    "password": "turanletne"
+}
+
+### LOGIN USER
+POST http://localhost:3000/api/login
+content-type: application/json
+
+{
+    "username": "arkanoz",
+    "password": "turanletne"
+}
+
+### GET USER
+GET http://localhost:3000/api/users/5
+
+### UPDATE USER
+PUT http://localhost:3000/api/users/5
+content-type: application/json
+
+{
+    "username": "arkanoz",
+    "password": "turanletne"
+}
+
+### STATUS USER
+PATCH http://localhost:3000/api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNDc0OCwiZXhwIjoxNzIwMzI4MzQ4fQ.HPzKi12R7o2cZtag_yQdsjLCMOqX0cnxmaMKkKut1M0
+content-type: application/json
+
+{
+    "username": "menfhis",
+    "password": "turanletne",
+    "status": "inactive",
+}
+
+### STATUS USER
+DELETE http://localhost:3000/api/users/4
+
+### GET TASKS
+GET http://localhost:3000/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNzk4NywiZXhwIjoxNzIwNTQzOTg3fQ.lc4lvAVPfIhIhT6AZojPbTkJfwLjfTPdXRNouSRuqK4
+
+### POST TASKS
+POST http://localhost:3000/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNzA2OSwiZXhwIjoxNzIwNTQzMDY5fQ.QAzdlN3YgQC524CrX4iJrkl7eAl59DrJIOD6Geo1DLg
+Content-Type: application/json
+
+{
+    "name": "Tarea 4"
+}
+
+### GET TASK
+GET http://localhost:3000/api/tasks/49
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNzk4NywiZXhwIjoxNzIwNTQzOTg3fQ.lc4lvAVPfIhIhT6AZojPbTkJfwLjfTPdXRNouSRuqK4
+
+### UPDATE TASK
+PATCH http://localhost:3000/api/tasks/49
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNzk4NywiZXhwIjoxNzIwNTQzOTg3fQ.lc4lvAVPfIhIhT6AZojPbTkJfwLjfTPdXRNouSRuqK4
+content-type: application/json
+
+{
+    "name": "Tarea 5",
+    "done": true
+}
+
+### GET TASKS by USER
+GET http://localhost:3000/api/users/5/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjUsImlhdCI6MTcyMDMyNzk4NywiZXhwIjoxNzIwNTQzOTg3fQ.lc4lvAVPfIhIhT6AZojPbTkJfwLjfTPdXRNouSRuqK4
